@@ -1,0 +1,157 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "python"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "screencastMode.fontSize": 20,
+  "screencastMode.verticalOffset": 20,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.autoSave": "off",
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "gitlens.views.branches.branches.layout": "list",
+  "editor.rename.enablePreview": false,
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "prettier.trailingComma": "none",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.fontFamily": "Inconsolata-g for Powerline",
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.fontLigatures": true,
+  "circleci.hostUrl": "",
+  "circleci.notifications.areActive": "no",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "breadcrumbs.enabled": false,
+  "editor.renderWhitespace": "none",
+
+  // VIM
+  "vim.leader": "<space>",
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["J", "K"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Navigation
+    // Switch between buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // Splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // Panes
+    // {
+    //   "before": ["leader", "h"],
+    //   "commands": ["workbench.action.focusLeftGroup"]
+    // },
+    // {
+    //   "before": ["leader", "j"],
+    //   "commands": ["workbench.action.focusBelowGroup"]
+    // },
+    // {
+    //   "before": ["leader", "k"],
+    //   "commands": ["workbench.action.focusAboveGroup"]
+    // },
+    // {
+    //   "before": ["leader", "l"],
+    //   "commands": ["workbench.action.focusRightGroup"]
+    // },
+
+    // File tree
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+
+    // Nice to have
+    { "before": ["leader", "q"], "commands": [":q"] },
+    { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "r"], "commands": ["code-runner.run"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+
+    { "before": ["<C-n>"], "commands": [":nohl"] },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+    // {
+    //   "before": [":"],
+    //   "commands": ["workbench.action.showCommands"],
+    //   "silent": true
+    // }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "e"],
+      "command": "workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
+    }
+    // {
+    //   "key": "shift+cmd+e",
+    //   "command": "workbench.view.explorer",
+    //   "when": "viewContainer.workbench.view.explorer.enabled"
+    // }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // Move highlighted lines of code and automatically indent if applies
+    {
+      "before": ["<S-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.enableNeovim": true,
+  "editor.fontSize": 13,
+  "output.smartScroll.enabled": false,
+  "code-runner.runInTerminal": true,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.env.osx": {},
+  "editor.suggest.localityBonus": true,
+  "pylint.importStrategy": "fromEnvironment",
+  "python.envFile": "${workspaceFolder}/.env"
+}
